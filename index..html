@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/icon" href="logo.png">
+    <title>Student Enrollment Form</title>
+    <link rel="stylesheet" type=" text/css" href="style.css">
+    
+</head>
+<!--header-->
+<h1>STUDENT ENROLLMENT FORM</h1>
+
+<!--html list-->
+<h3>Instructions:</h3>
+<ol>
+  <li>Fill in the form fields.</li>
+  <li>Check your interests.</li>
+  <li>Click "Enroll Now" to submit.</li>
+</ol>
+
+<body>
+    <div class = "form_group">
+        
+        <form action="'#" method="post">
+            <p>Full Name:</p>
+            <input types="text" name="fullname" placeholder="Enter Full Name">
+            <p>Email Address:</p>
+            <input type="email" name="email" placeholder="Enter Email Address">
+            <p>Age</p>
+            <input type="number" name="number" placeholder="Enter Age">
+            <p>Sex:</p>
+            <input type="radio" name="sex" value="male" required>Male 
+            <input type="radio" name="sex" value="female" required>Femalw
+
+        </form>
+
+    </div>
+<!--drop down list-->
+    <label for="course">Course Option:</label>
+    <select id="course" name="course" required>
+        <option value="">Select a Courses </option>
+        <option value="BSIT">BSIT</option>
+        <option value="BSSW">BSSW</option>
+        <option value="BSPA">BSPA</option>
+        <option value="BTVED">BTVED</option>
+        <option value="BSBA">BSBA</option>
+
+
+
+    </select>
+
+    <!--check boxes-->
+    <div class="checkbox_group">
+        <label>Interests:</label>
+        <label><input type="checkbox" name="interest" value="Web Development"> Web Development</label>
+        <label><input type="checkbox" name="interest" value="Data Science"> Data Science</label>
+        <label><input type="checkbox" name="interest" value="Networking"> Networking</label>
+        <label><input type="checkbox" name="interest" value="Graphic Design"> Graphic Design</label>
+      </div>
+
+      <button type="submit">Enroll Now</button>
+
+<!-- eykstiemel teybele -->
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Age</th>
+        <th>Sex</th>
+        <th>Course</th>
+        <th>Interests</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Buttercup</td>
+        <td>hotheadedtomboy@gmail.com</td>
+        <td>12</td>
+        <td>Female</td>
+        <td>BSIT</td>
+        <td>Web Development, Networking</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Bubbles</td>
+        <td>bubblepretty@gmail.com</td>
+        <td>22</td>
+        <td>Female</td>
+        <td>BSIT</td>
+        <td>Graphic Design</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Blossom</td>
+        <td>blowsome@gmail.com</td>
+        <td>24</td>
+        <td>Female</td>
+        <td>BSIT</td>
+        <td>Data Science</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Mojo Jojo</td>
+        <td>pogi@gmail.com</td>
+        <td>21</td>
+        <td>Male</td>
+        <td>BSIT</td>
+        <td>Web Development, Graphic Design</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
